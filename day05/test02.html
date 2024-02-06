@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        .header{
+            background-color: rgb(9, 214, 22);
+            height: 100px;
+        }
+        .footer{
+            background-color: rgb(17, 26, 152);
+            height: 100px;
+        }
+        .section-container{
+            background-color: rgba(232, 20, 20, 0.938);
+            height: 500px;
+    
+            /* aside, section을 가로로 배치해야함 */
+        display : flex;
+        justify-content: space-between;
+        }
+        .aside{
+            background-color: aqua;
+            height: 100%; /*heught : 500px */
+            /* %단위는 부모요소의 크기의 %를 의미함 */
+            width: 400px;
+        }
+        .section {
+            background-color: blueviolet;
+            height: 100%;
+
+            width: 100%; /*초과된 너비는 잘림*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="section-container">
+            <div class="aside"></div>
+            <div class="section"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
